@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* STYLES */
+
+.container {
+    padding: 0 2rem;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.even-columns {
+   display: flex; 
+   flex-direction: column;
+   gap: 1em;
+}
+
+@media (min-width: 50em) {
+    .even-columns {
+        flex-direction: row;
+    }
+}
+
+.even-columns > * {
+    flex-basis: 100%;
+    border: 2px solid red;
+}
+
+.flex-item {
+    padding: 2rem;
+}
